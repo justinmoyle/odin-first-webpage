@@ -70,6 +70,7 @@ h4 {
 body {
     font-family: 'Roboto';
     margin: 0;
+    min-height: 100%;
 }
 
 /* main */
@@ -119,9 +120,10 @@ body {
     max-width: 125px;
     padding: 8px 0;
     border-radius: 8px;
+    text-align: center;
     background-color: #3882f6;
     color: #e5e7eb;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -152,6 +154,10 @@ body {
     padding-bottom: 36px;
 }  
 
+.info__container {
+    padding: 48px;
+}
+
 .info__title {
     display: flex;
     justify-content: center;
@@ -172,10 +178,13 @@ body {
 .card__crop {
     display: flex;
     flex-direction: column;
-    background-position: center;
     justify-content: center;
     align-items: center;
     gap: 12px;
+}
+
+.card__text {
+    text-align: center;
 }
 
 .card__img {
@@ -279,9 +288,15 @@ body {
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
     background-color: #1f2937;
     color: #f9faf8;
     padding: 24px;
+}
+
+.copywrite {
+    text-align: center;
 }
